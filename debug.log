@@ -1,0 +1,6 @@
+Array
+(
+    [u] => admin
+    [p] => eval(alert(1))
+    [c] => t
+)

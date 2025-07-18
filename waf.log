@@ -1,0 +1,343 @@
+WAF START: 06:06:23
+INPUT: Array
+(
+    [u] => admin
+    [p] => union select 1,2,3
+    [c] => t
+)
+
+CHECK: admin
+CHECK: union select 1,2,3
+BLOCKED: union select 1,2,3 (found: union)
+WAF START: 06:06:23
+INPUT: Array
+(
+    [u] => admin
+    [p] => <script>alert(1)</script>
+    [c] => t
+)
+
+CHECK: admin
+CHECK: <script>alert(1)</script>
+BLOCKED: <script>alert(1)</script> (found: script)
+WAF START: 06:06:23
+INPUT: Array
+(
+    [u] => admin
+    [p] => <img src=x onerror=alert(1)>
+    [c] => t
+)
+
+CHECK: admin
+CHECK: <img src=x onerror=alert(1)>
+BLOCKED: <img src=x onerror=alert(1)> (found: img)
+WAF START: 06:06:23
+INPUT: Array
+(
+    [u] => admin
+    [p] => ' or '1'='1
+    [c] => t
+)
+
+CHECK: admin
+CHECK: ' or '1'='1
+BLOCKED: ' or '1'='1 (found: or)
+WAF START: 06:06:23
+INPUT: Array
+(
+    [u] => admin
+    [p] => information_schema.tables
+    [c] => t
+)
+
+CHECK: admin
+CHECK: information_schema.tables
+BLOCKED: information_schema.tables (found: information_schema)
+WAF START: 06:06:23
+INPUT: Array
+(
+    [u] => admin
+    [p] => eval(alert(1))
+    [c] => t
+)
+
+CHECK: admin
+CHECK: eval(alert(1))
+BLOCKED: eval(alert(1)) (found: alert)
+WAF START: 06:07:06
+INPUT: Array
+(
+    [u] => admin
+    [p] => union select 1,2,3
+    [c] => t
+)
+
+CHECK: admin
+CHECK: union select 1,2,3
+BLOCKED: union select 1,2,3 (found: union)
+WAF START: 06:07:06
+INPUT: Array
+(
+    [u] => admin
+    [p] => <script>alert(1)</script>
+    [c] => t
+)
+
+CHECK: admin
+CHECK: <script>alert(1)</script>
+BLOCKED: <script>alert(1)</script> (found: script)
+WAF START: 06:07:06
+INPUT: Array
+(
+    [u] => admin
+    [p] => <img src=x onerror=alert(1)>
+    [c] => t
+)
+
+CHECK: admin
+CHECK: <img src=x onerror=alert(1)>
+BLOCKED: <img src=x onerror=alert(1)> (found: img)
+WAF START: 06:07:06
+INPUT: Array
+(
+    [u] => admin
+    [p] => ' or '1'='1
+    [c] => t
+)
+
+CHECK: admin
+CHECK: ' or '1'='1
+BLOCKED: ' or '1'='1 (found: or)
+WAF START: 06:07:06
+INPUT: Array
+(
+    [u] => admin
+    [p] => information_schema.tables
+    [c] => t
+)
+
+CHECK: admin
+CHECK: information_schema.tables
+BLOCKED: information_schema.tables (found: information_schema)
+WAF START: 06:07:06
+INPUT: Array
+(
+    [u] => admin
+    [p] => eval(alert(1))
+    [c] => t
+)
+
+CHECK: admin
+CHECK: eval(alert(1))
+BLOCKED: eval(alert(1)) (found: alert)
+WAF START: 06:07:45
+INPUT: Array
+(
+    [u] => admin
+    [p] => union select 1,2,3
+)
+
+CHECK: admin
+CHECK: union select 1,2,3
+BLOCKED: union select 1,2,3 (found: union)
+WAF START: 06:07:45
+INPUT: Array
+(
+    [u] => admin
+    [p] => <script>alert(1)</script>
+)
+
+CHECK: admin
+CHECK: <script>alert(1)</script>
+BLOCKED: <script>alert(1)</script> (found: script)
+WAF START: 06:07:45
+INPUT: Array
+(
+    [u] => admin
+    [p] => <img src=x onerror=alert(1)>
+)
+
+CHECK: admin
+CHECK: <img src=x onerror=alert(1)>
+BLOCKED: <img src=x onerror=alert(1)> (found: img)
+WAF START: 06:07:45
+INPUT: Array
+(
+    [u] => admin
+    [p] => ' or '1'='1
+)
+
+CHECK: admin
+CHECK: ' or '1'='1
+BLOCKED: ' or '1'='1 (found: or)
+WAF START: 06:07:45
+INPUT: Array
+(
+    [u] => admin
+    [p] => information_schema.tables
+)
+
+CHECK: admin
+CHECK: information_schema.tables
+BLOCKED: information_schema.tables (found: information_schema)
+WAF START: 06:07:45
+INPUT: Array
+(
+    [u] => admin
+    [p] => eval(alert(1))
+)
+
+CHECK: admin
+CHECK: eval(alert(1))
+BLOCKED: eval(alert(1)) (found: alert)
+WAF START: 06:07:45
+INPUT: Array
+(
+    [PHPSESSID] => 0b2p5qj7n4achu9mm09jfkjmli
+)
+
+CHECK: 0b2p5qj7n4achu9mm09jfkjmli
+WAF START: 06:08:47
+INPUT: Array
+(
+    [u] => admin
+    [p] => union select 1,2,3
+    [c] => t
+)
+
+CHECK: admin
+CHECK: union select 1,2,3
+BLOCKED: union select 1,2,3 (found: union)
+WAF START: 06:08:47
+INPUT: Array
+(
+    [u] => admin
+    [p] => <script>alert(1)</script>
+    [c] => t
+)
+
+CHECK: admin
+CHECK: <script>alert(1)</script>
+BLOCKED: <script>alert(1)</script> (found: script)
+WAF START: 06:08:47
+INPUT: Array
+(
+    [u] => admin
+    [p] => <img src=x onerror=alert(1)>
+    [c] => t
+)
+
+CHECK: admin
+CHECK: <img src=x onerror=alert(1)>
+BLOCKED: <img src=x onerror=alert(1)> (found: img)
+WAF START: 06:08:47
+INPUT: Array
+(
+    [u] => admin
+    [p] => ' or '1'='1
+    [c] => t
+)
+
+CHECK: admin
+CHECK: ' or '1'='1
+BLOCKED: ' or '1'='1 (found: or)
+WAF START: 06:08:47
+INPUT: Array
+(
+    [u] => admin
+    [p] => information_schema.tables
+    [c] => t
+)
+
+CHECK: admin
+CHECK: information_schema.tables
+BLOCKED: information_schema.tables (found: information_schema)
+WAF START: 06:08:47
+INPUT: Array
+(
+    [u] => admin
+    [p] => eval(alert(1))
+    [c] => t
+)
+
+CHECK: admin
+CHECK: eval(alert(1))
+BLOCKED: eval(alert(1)) (found: alert)
+WAF START: 06:11:35
+INPUT: Array
+(
+    [PHPSESSID] => 0b2p5qj7n4achu9mm09jfkjmli
+)
+
+CHECK: 0b2p5qj7n4achu9mm09jfkjmli
+WAF START: 06:12:42
+INPUT: Array
+(
+    [PHPSESSID] => 0b2p5qj7n4achu9mm09jfkjmli
+)
+
+CHECK: 0b2p5qj7n4achu9mm09jfkjmli
+WAF START: 06:12:48
+INPUT: Array
+(
+    [PHPSESSID] => 0b2p5qj7n4achu9mm09jfkjmli
+)
+
+CHECK: 0b2p5qj7n4achu9mm09jfkjmli
+WAF START: 06:12:49
+INPUT: Array
+(
+    [PHPSESSID] => 0b2p5qj7n4achu9mm09jfkjmli
+)
+
+CHECK: 0b2p5qj7n4achu9mm09jfkjmli
+WAF START: 06:12:50
+INPUT: Array
+(
+    [PHPSESSID] => 0b2p5qj7n4achu9mm09jfkjmli
+)
+
+CHECK: 0b2p5qj7n4achu9mm09jfkjmli
+WAF START: 06:12:55
+INPUT: Array
+(
+    [username] => admin
+    [password] => adminadmin
+    [csrf_token] => c6864a5ca77044f64e58aa6313cd61dd205affeb0401beb37783aebb440f69d1
+    [PHPSESSID] => 0b2p5qj7n4achu9mm09jfkjmli
+)
+
+CHECK: admin
+CHECK: adminadmin
+CHECK: 0b2p5qj7n4achu9mm09jfkjmli
+WAF START: 06:12:55
+INPUT: Array
+(
+    [PHPSESSID] => cd2fek73oa27cv8botndebbo2i
+)
+
+CHECK: cd2fek73oa27cv8botndebbo2i
+WAF START: 06:12:56
+INPUT: Array
+(
+    [PHPSESSID] => cd2fek73oa27cv8botndebbo2i
+)
+
+CHECK: cd2fek73oa27cv8botndebbo2i
+WAF START: 06:12:59
+INPUT: Array
+(
+    [message] => ауаывфывфыв
+    [csrf_token] => c6864a5ca77044f64e58aa6313cd61dd205affeb0401beb37783aebb440f69d1
+    [PHPSESSID] => cd2fek73oa27cv8botndebbo2i
+)
+
+CHECK: ауаывфывфыв
+CHECK: cd2fek73oa27cv8botndebbo2i
+WAF START: 06:13:01
+INPUT: Array
+(
+    [PHPSESSID] => cd2fek73oa27cv8botndebbo2i
+)
+
+CHECK: cd2fek73oa27cv8botndebbo2i
